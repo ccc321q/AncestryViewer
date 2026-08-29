@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ancestry File Viewer</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🌳</text></svg>">
+</head>
+<body>
+
+<header class="top">
+  <h1>Ancestry File Viewer<small>.paf &middot; .pal &middot; .rmtree &middot; .ged &mdash; read entirely in your browser</small></h1>
+  <button id="openBtn" class="primary" type="button">Open file</button>
+  <button id="mergeBtn" type="button" title="Combine two or more files into one tree">Merge files…</button>
+  <input id="picker" type="file" accept=".paf,.pal,.rmtree,.rmgc,.rmgb,.ged,.gedcom" hidden>
+  <input id="mergePicker" type="file" accept=".paf,.pal,.rmtree,.rmgc,.rmgb,.ged,.gedcom" multiple hidden>
+  <div id="files"></div>
+</header>
+
+<nav id="tabs"></nav>
+<p id="status"></p>
+<main id="main"></main>
+<div id="toasts"></div>
+
+<script src="js/util.js"></script>
+<script src="js/model.js"></script>
+<script src="js/sqlite.js"></script>
+<script src="js/rmtree.js"></script>
+<script src="js/paf.js"></script>
+<script src="js/pal.js"></script>
+<script src="js/gedcomin.js"></script>
+<script src="js/merge.js"></script>
+<script src="js/conflicts.js"></script>
+<script src="js/gedcom.js"></script>
+<script src="js/render.js"></script>
+<script src="js/inspector.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
